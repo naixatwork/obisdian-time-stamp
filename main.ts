@@ -3,7 +3,7 @@ import {Plugin} from 'obsidian';
 import {container} from "tsyringe";
 import RibbonService from "./src/ribbon.service";
 import MAIN_IDENTIFIERS from "./src/shared/main.identifiers";
-import {ExampleView, VIEW_TYPE_EXAMPLE} from "./src/view";
+import RegisterDashboardService from "./src/dashboard/registerDashboard.service";
 
 export default class MainPlugin extends Plugin {
 	async onload() {
@@ -11,11 +11,7 @@ export default class MainPlugin extends Plugin {
 			MAIN_IDENTIFIERS.mainPlugin, {useValue: this}
 		);
 		container.resolve(RibbonService)
-
-		this.registerView(
-			VIEW_TYPE_EXAMPLE,
-			(leaf) => new ExampleView(leaf)
-		)
+		container.resolve(RegisterDashboardService)
 	}
 	onunload() {
 		container.dispose()

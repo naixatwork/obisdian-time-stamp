@@ -1,28 +1,16 @@
 import MainPlugin from "../main";
 import {inject, singleton} from "tsyringe";
 import MAIN_IDENTIFIERS from "./shared/main.identifiers";
-import {VIEW_TYPE_EXAMPLE} from "./view";
+import DashboardShowService from "./core/dashboardShow.service";
 
 @singleton()
 export default class RibbonService {
 	constructor(
-		@inject(MAIN_IDENTIFIERS.mainPlugin) private readonly mainPlugin: MainPlugin
+		@inject(MAIN_IDENTIFIERS.mainPlugin) private readonly mainPlugin: MainPlugin,
+		@inject(DashboardShowService) private readonly dashboardShowService: DashboardShowService
 	) {
 		this.mainPlugin.addRibbonIcon("pie-chart", "Dashboard", () => {
-			this.activateView().then(console.log)
+			dashboardShowService.showEvent$.next(null)
 		})
-	}
-
-	async activateView() {
-		this.mainPlugin.app.workspace.detachLeavesOfType(VIEW_TYPE_EXAMPLE);
-
-		await this.mainPlugin.app.workspace.getLeaf(false).setViewState({
-			type: VIEW_TYPE_EXAMPLE,
-			active: true,
-		});
-
-		this.mainPlugin.app.workspace.revealLeaf(
-			this.mainPlugin.app.workspace.getLeavesOfType(VIEW_TYPE_EXAMPLE)[0]
-		);
 	}
 }
