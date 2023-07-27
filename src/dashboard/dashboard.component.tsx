@@ -6,9 +6,7 @@ export const DashboardComponent = () => {
 
     return (
         <>
-            <h1>
-                {counter}
-            </h1>
+            <h1 className="text-3xl font-bold underline">{counter}</h1>
             <button onClick={() => {
                 setCounter(prev => prev+1)
             }}>
