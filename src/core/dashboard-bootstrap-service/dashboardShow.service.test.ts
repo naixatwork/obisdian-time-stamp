@@ -2,7 +2,7 @@ import expect from "expect";
 import {container} from "tsyringe";
 import DashboardBootstrapService from "./dashboardBootstrap.service";
 
-describe('DashboardShowService', () => {
+describe(DashboardBootstrapService.name, () => {
 	let service = container.resolve(DashboardBootstrapService);
 
 	beforeEach(() => {
