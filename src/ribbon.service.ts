@@ -5,12 +5,12 @@ import DashboardShowService from "./core/dashboardShow.service";
 
 @singleton()
 export default class RibbonService {
-	constructor(
-		@inject(MAIN_IDENTIFIERS.mainPlugin) private readonly mainPlugin: MainPlugin,
-		@inject(DashboardShowService) private readonly dashboardShowService: DashboardShowService
-	) {
-		this.mainPlugin.addRibbonIcon("pie-chart", "Dashboard", () => {
-			dashboardShowService.showEvent$.next(null)
-		})
-	}
+  constructor(
+    @inject(MAIN_IDENTIFIERS.mainPlugin) private readonly mainPlugin: MainPlugin,
+    @inject(DashboardShowService) private readonly dashboardShowService: DashboardShowService
+  ) {
+    this.mainPlugin.addRibbonIcon("pie-chart", "Dashboard", () => {
+      dashboardShowService.notifyShowApp();
+    });
+  }
 }

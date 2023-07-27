@@ -1,8 +1,15 @@
-import {autoInjectable, injectable, singleton} from "tsyringe";
-import {Subject} from "rxjs";
-import instance from "tsyringe/dist/typings/dependency-container";
+import {singleton} from "tsyringe";
+import {Observable, Subject} from "rxjs";
 
 @singleton()
 export default class DashboardShowService {
-    public readonly showEvent$ = new Subject<null>()
+	readonly #showApp$ = new Subject<null>();
+
+	public notifyShowApp() {
+		this.#showApp$.next(null);
+	}
+
+	public get showApp$(): Observable<null> {
+		return this.#showApp$.asObservable();
+	}
 }
