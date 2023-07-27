@@ -1,7 +1,6 @@
 import {IconName, ItemView, WorkspaceLeaf} from "obsidian";
 import {createRoot} from "react-dom/client";
 import * as React from "react";
-import * as ReactDOM from "react-dom";
 import {DashboardComponent} from "./dashboard.component";
 
 
