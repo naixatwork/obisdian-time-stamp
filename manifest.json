@@ -1,10 +1,10 @@
 {
-	"id": "obisdian-time-stamp",
-	"name": "TimeStamp",
+	"id": "obsidian-dashboard",
+	"name": "Dashboard",
 	"version": "0.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "This is a sample plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API.",
-	"author": "anon",
+	"description": "You will be able to see the progress of your vault in an instant",
+	"author": "Mohammad Heidari",
 	"authorUrl": "",
 	"fundingUrl": "",
 	"isDesktopOnly": false
