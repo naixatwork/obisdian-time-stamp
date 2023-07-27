@@ -1,26 +1,28 @@
-import Dashboard from "../main";
-import {Subject} from "rxjs";
+import MainPlugin from "../main";
 import {inject, singleton} from "tsyringe";
+import MAIN_IDENTIFIERS from "./shared/main.identifiers";
+import {VIEW_TYPE_EXAMPLE} from "./view";
 
 @singleton()
 export default class RibbonService {
-	private onOpenApp = new Subject()
-
 	constructor(
-		@inject('Dashboard') private readonly dashboard: Dashboard
+		@inject(MAIN_IDENTIFIERS.mainPlugin) private readonly mainPlugin: MainPlugin
 	) {
-        console.log('happy', this.dashboard)
-		this.onOpenApp.subscribe({
-			next: () => {
-				console.log('lol111')
-			}
+		this.mainPlugin.addRibbonIcon("pie-chart", "Dashboard", () => {
+			this.activateView().then(console.log)
 		})
-		this.perform()
 	}
 
-	private perform() {
-		this.dashboard.addRibbonIcon("pie-chart", "Dashboard", () => {
-			this.onOpenApp.next(1);
-		})
+	async activateView() {
+		this.mainPlugin.app.workspace.detachLeavesOfType(VIEW_TYPE_EXAMPLE);
+
+		await this.mainPlugin.app.workspace.getLeaf(false).setViewState({
+			type: VIEW_TYPE_EXAMPLE,
+			active: true,
+		});
+
+		this.mainPlugin.app.workspace.revealLeaf(
+			this.mainPlugin.app.workspace.getLeavesOfType(VIEW_TYPE_EXAMPLE)[0]
+		);
 	}
 }

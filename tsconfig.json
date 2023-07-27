@@ -18,7 +18,8 @@
       "ES7"
     ],
 	"experimentalDecorators": true,
-	"emitDecoratorMetadata": true
+	"emitDecoratorMetadata": true,
+    "jsx": "react"
   },
   "include": [
     "**/*.ts"
