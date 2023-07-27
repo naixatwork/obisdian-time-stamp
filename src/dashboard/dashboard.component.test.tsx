@@ -1,7 +1,6 @@
 import * as React from "react";
 import {render, screen} from "@testing-library/react";
 import {DashboardComponent} from "./dashboard.component";
-
 describe('dashboardComponent', () => {
     beforeEach(() => {
        render(<DashboardComponent />);
@@ -10,6 +9,6 @@ describe('dashboardComponent', () => {
 
     test('it should render', () => {
         const component = screen.getByTestId('app');
-        expect(component).toBeTruthy();
+        expect(component).toHaveTextContent('0');
     })
 });
