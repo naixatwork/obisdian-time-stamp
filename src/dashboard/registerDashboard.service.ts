@@ -2,21 +2,21 @@ import {inject, singleton} from "tsyringe";
 import MAIN_IDENTIFIERS from "../shared/main.identifiers";
 import MainPlugin from "../../main";
 import {DashboardView} from "./dashboard.view";
-import DashboardShowService from "../core/dashboardShow.service";
+import DashboardBootstrapService from "../core/dashboardBootstrap.service";
 
 @singleton()
 export default class RegisterDashboardService {
 
 	constructor(
 		@inject(MAIN_IDENTIFIERS.mainPlugin) private readonly mainPlugin: MainPlugin,
-		@inject(DashboardShowService) private readonly dashboardShowService: DashboardShowService
+		@inject(DashboardBootstrapService) private readonly dashboardShowService: DashboardBootstrapService
 	) {
 		this.mainPlugin.registerView(
 			DashboardView.VIEW_TYPE,
 			(leaf) => new DashboardView(leaf)
 		);
 
-		this.dashboardShowService.showApp$.subscribe({
+		this.dashboardShowService.bootstrapStatus$.subscribe({
 			next: () => {
 				this.activateView().then();
 			}
