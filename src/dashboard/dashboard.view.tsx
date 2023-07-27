@@ -4,16 +4,17 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import {DashboardComponent} from "./dashboard.component";
 
-export const VIEW_TYPE_EXAMPLE = "dashboard-view";
 
 export class DashboardView extends ItemView {
+    public static readonly VIEW_TYPE = "dashboard-view";
+
     root = createRoot(this.containerEl.children[1]);
     constructor(leaf: WorkspaceLeaf) {
         super(leaf);
     }
 
     getViewType() {
-        return VIEW_TYPE_EXAMPLE;
+        return DashboardView.VIEW_TYPE;
     }
 
     getIcon(): IconName {
