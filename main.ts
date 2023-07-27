@@ -1,10 +1,14 @@
-import { App, Editor, MarkdownView, Modal, Notice, Plugin, PluginSettingTab, Setting } from 'obsidian';
+import "reflect-metadata";
+import {Plugin} from 'obsidian';
+import {container} from "tsyringe";
+import RibbonService from "./src/ribbon.service";
 
-export default class MyPlugin extends Plugin {
+export default class Dashboard extends Plugin {
 	async onload() {
-		console.log('dashboard')
+		container.register<Dashboard>('Dashboard', {useValue: this});
+		container.resolve(RibbonService)
 	}
 	onunload() {
-
+		container.dispose()
 	}
 }
