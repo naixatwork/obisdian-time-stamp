@@ -24,6 +24,7 @@ export const DashboardComponent = () => {
 					tw-bg-obsidian-base-20
 					tw-rounded-lg
 					tw-text-xl
+					@lg:tw-text-2xl
 					tw-flex
 					tw-justify-center
 					tw-items-center
@@ -31,7 +32,7 @@ export const DashboardComponent = () => {
 					<ClockComponent/>
 				</div>
 				<ComingSoon extendClassName={"tw-aspect-square"}>
-					<Settings className="tw-text-obsidian-primary" size={60}/>
+					<Settings size={80}/>
 				</ComingSoon>
 			</div>
 		</main>

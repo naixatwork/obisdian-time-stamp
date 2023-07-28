@@ -11,7 +11,7 @@ const ComingSoon = ({children, extendClassName = ''}: ComingSoonProps) => {
 			className={`
 				tw-h-full
 				tw-shadow-lg
-				tw-bg-obsidian-base-20
+				tw-bg-obsidian-primary
 				tw-rounded-lg
 				tw-flex
 				tw-justify-center
@@ -19,7 +19,7 @@ const ComingSoon = ({children, extendClassName = ''}: ComingSoonProps) => {
 				tw-relative
 				${extendClassName}`}
 		>
-			<p className="tw-absolute tw-leading-4 tw-bottom-1 tw-left-1 tw-text-obsidian-primary tw-rounded tw-m-0 tw-p-0.5 tw-text-xs">
+			<p className="tw-absolute tw-leading-4 tw-bottom-1 tw-left-1 tw-rounded tw-m-0 tw-p-0.5 tw-text-xs">
 				coming soon
 			</p>
 			{children}
