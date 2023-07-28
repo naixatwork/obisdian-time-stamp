@@ -107,10 +107,10 @@
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\README.md",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\setup-tests.ts",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\dashboard-bootstrap-service\\dashboardBootstrap.service.ts",
-  "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\dashboard-bootstrap-service\\dashboardShow.service.test.ts",
+  "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\dashboard-bootstrap-service\\dashboardBootstrap.service.spec.ts",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\ribbon-service\\ribbon.service.test.ts",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\ribbon-service\\ribbon.service.ts",
-  "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\dashboard\\dashboard.component.test.tsx",
+  "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\dashboard\\dashboard.component.spec.tsx",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\dashboard\\dashboard.component.tsx",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\dashboard\\dashboard.view.tsx",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\dashboard\\registerDashboard.service.ts",
@@ -147,15 +147,15 @@
   mutate: false
 }
 08:20:18 (20096) INFO ConcurrencyTokenProvider Creating 11 test runner process(es).
-08:20:18 (20096) DEBUG ChildProcessProxy Started CheckerWorker in worker process 0 with pid 10804 
+08:20:18 (20096) DEBUG ChildProcessProxy Started CheckerWorker in worker process 0 with pid 10804
 08:20:19 (10804) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
 08:20:19 (10804) DEBUG PluginLoader Loading plugin file:///C:/custom/media/obsidian/.obsidian/plugins/obsidian-dashboard/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
 08:20:19 (20096) DEBUG Sandbox Creating a sandbox for files in C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\.stryker-tmp\sandbox3842089
 08:20:19 (20096) DEBUG Sandbox Start symlink node_modules
 08:20:19 (20096) DEBUG Sandbox Create symlink from C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\node_modules to C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\.stryker-tmp\sandbox3842089\node_modules
 08:20:19 (20096) DEBUG BroadcastReporter Broadcasting to reporters ["html","clear-text","progress","dashboard"]
-08:20:19 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 0 with pid 16688 
-08:20:19 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 1 with pid 10984 
+08:20:19 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 0 with pid 16688
+08:20:19 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 1 with pid 10984
 08:20:20 (16688) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
 08:20:20 (16688) DEBUG PluginLoader Loading plugin file:///C:/custom/media/obsidian/.obsidian/plugins/obsidian-dashboard/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
 08:20:20 (10984) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
@@ -197,7 +197,7 @@
 08:20:22 (20096) INFO DryRunExecutor Starting initial test run (jest test runner with "perTest" coverage analysis). This may take a while.
 08:20:22 (20096) DEBUG DryRunExecutor Using timeout of 300000 ms.
 08:20:22 (20096) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
-08:20:22 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 2 with pid 9288 
+08:20:22 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 2 with pid 9288
 08:20:22 (10984) TRACE JestTestRunner Invoking Jest with config {"fileNamesUnderTest":["C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\.stryker-tmp\\sandbox3842089\\src\\core\\dashboard-bootstrap-service\\dashboardBootstrap.service.ts","C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\.stryker-tmp\\sandbox3842089\\src\\core\\ribbon-service\\ribbon.service.ts","C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\.stryker-tmp\\sandbox3842089\\src\\dashboard\\dashboard.component.tsx","C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\.stryker-tmp\\sandbox3842089\\src\\dashboard\\dashboard.view.tsx","C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\.stryker-tmp\\sandbox3842089\\src\\dashboard\\registerDashboard.service.ts","C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\.stryker-tmp\\sandbox3842089\\src\\shared\\main.identifiers.ts"],"jestConfig":{"preset":"ts-jest","coverageProvider":"v8","moduleDirectories":["node_modules","src"],"collectCoverageFrom":["!main.ts"],"testEnvironment":"C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\node_modules\\@stryker-mutator\\jest-runner\\dist\\src\\jest-plugins\\jest-environment-generic.cjs","transform":{"^.+\\.ts?$":"ts-jest"},"setupFilesAfterEnv":["./setup-tests.ts"],"rootDir":"C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\.stryker-tmp\\sandbox3842089","collectCoverage":false,"verbose":false,"notify":false,"bail":false,"reporters":[],"globals":{"__strykerGlobalNamespace__":"__stryker__"}},"testLocationInResults":true}
 08:20:22 (16688) DEBUG CustomJestConfigLoader Read config from "jest.config.ts" (used native `readInitialOptions` from jest-config).
 08:20:22 (16688) DEBUG JestTestRunner Merging file-based config {
@@ -227,7 +227,7 @@
   "bail": false,
   "reporters": []
 }
-08:20:22 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 3 with pid 1516 
+08:20:22 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 3 with pid 1516
 08:20:23 (9288) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
 08:20:23 (9288) DEBUG PluginLoader Loading plugin file:///C:/custom/media/obsidian/.obsidian/plugins/obsidian-dashboard/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
 08:20:23 (1516) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
@@ -266,7 +266,7 @@
   "bail": false,
   "reporters": []
 }
-08:20:25 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 4 with pid 14692 
+08:20:25 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 4 with pid 14692
 08:20:25 (1516) DEBUG CustomJestConfigLoader Read config from "jest.config.ts" (used native `readInitialOptions` from jest-config).
 08:20:25 (1516) DEBUG JestTestRunner Merging file-based config {
   "preset": "ts-jest",
@@ -295,7 +295,7 @@
   "bail": false,
   "reporters": []
 }
-08:20:25 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 5 with pid 22488 
+08:20:25 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 5 with pid 22488
 08:20:26 (14692) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
 08:20:26 (14692) DEBUG PluginLoader Loading plugin file:///C:/custom/media/obsidian/.obsidian/plugins/obsidian-dashboard/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
 08:20:26 (22488) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
@@ -334,7 +334,7 @@
   "bail": false,
   "reporters": []
 }
-08:20:28 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 6 with pid 17880 
+08:20:28 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 6 with pid 17880
 08:20:28 (22488) DEBUG CustomJestConfigLoader Read config from "jest.config.ts" (used native `readInitialOptions` from jest-config).
 08:20:28 (22488) DEBUG JestTestRunner Merging file-based config {
   "preset": "ts-jest",
@@ -363,7 +363,7 @@
   "bail": false,
   "reporters": []
 }
-08:20:28 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 7 with pid 20628 
+08:20:28 (20096) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 7 with pid 20628
 08:20:29 (17880) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
 08:20:29 (17880) DEBUG PluginLoader Loading plugin file:///C:/custom/media/obsidian/.obsidian/plugins/obsidian-dashboard/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
 08:20:29 (20628) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
@@ -604,10 +604,10 @@ Require stack:
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\README.md",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\setup-tests.ts",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\dashboard-bootstrap-service\\dashboardBootstrap.service.ts",
-  "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\dashboard-bootstrap-service\\dashboardShow.service.test.ts",
+  "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\dashboard-bootstrap-service\\dashboardBootstrap.service.spec.ts",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\ribbon-service\\ribbon.service.test.ts",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\ribbon-service\\ribbon.service.ts",
-  "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\dashboard\\dashboard.component.test.tsx",
+  "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\dashboard\\dashboard.component.spec.tsx",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\dashboard\\dashboard.component.tsx",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\dashboard\\dashboard.view.tsx",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\dashboard\\registerDashboard.service.ts",
@@ -644,15 +644,15 @@ Require stack:
   mutate: false
 }
 08:21:17 (15800) INFO ConcurrencyTokenProvider Creating 11 test runner process(es).
-08:21:17 (15800) DEBUG ChildProcessProxy Started CheckerWorker in worker process 0 with pid 20020 
+08:21:17 (15800) DEBUG ChildProcessProxy Started CheckerWorker in worker process 0 with pid 20020
 08:21:18 (20020) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
 08:21:18 (20020) DEBUG PluginLoader Loading plugin file:///C:/custom/media/obsidian/.obsidian/plugins/obsidian-dashboard/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
 08:21:18 (15800) DEBUG Sandbox Creating a sandbox for files in C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\.stryker-tmp\sandbox1330625
 08:21:18 (15800) DEBUG Sandbox Start symlink node_modules
 08:21:18 (15800) DEBUG Sandbox Create symlink from C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\node_modules to C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\.stryker-tmp\sandbox1330625\node_modules
 08:21:18 (15800) DEBUG BroadcastReporter Broadcasting to reporters ["html","clear-text","progress","dashboard"]
-08:21:18 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 0 with pid 5776 
-08:21:18 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 1 with pid 18588 
+08:21:18 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 0 with pid 5776
+08:21:18 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 1 with pid 18588
 08:21:18 (18588) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
 08:21:18 (18588) DEBUG PluginLoader Loading plugin file:///C:/custom/media/obsidian/.obsidian/plugins/obsidian-dashboard/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
 08:21:18 (5776) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
@@ -694,7 +694,7 @@ Require stack:
 08:21:21 (15800) INFO DryRunExecutor Starting initial test run (jest test runner with "perTest" coverage analysis). This may take a while.
 08:21:21 (15800) DEBUG DryRunExecutor Using timeout of 300000 ms.
 08:21:21 (15800) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
-08:21:21 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 2 with pid 16132 
+08:21:21 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 2 with pid 16132
 08:21:21 (18588) DEBUG CustomJestConfigLoader Read config from "jest.config.ts" (used native `readInitialOptions` from jest-config).
 08:21:21 (18588) DEBUG JestTestRunner Merging file-based config {
   "preset": "ts-jest",
@@ -723,7 +723,7 @@ Require stack:
   "bail": false,
   "reporters": []
 }
-08:21:21 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 3 with pid 5556 
+08:21:21 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 3 with pid 5556
 08:21:21 (5776) TRACE JestTestRunner Invoking Jest with config {"fileNamesUnderTest":["C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\.stryker-tmp\\sandbox1330625\\src\\core\\dashboard-bootstrap-service\\dashboardBootstrap.service.ts","C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\.stryker-tmp\\sandbox1330625\\src\\core\\ribbon-service\\ribbon.service.ts","C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\.stryker-tmp\\sandbox1330625\\src\\dashboard\\dashboard.component.tsx","C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\.stryker-tmp\\sandbox1330625\\src\\dashboard\\dashboard.view.tsx","C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\.stryker-tmp\\sandbox1330625\\src\\dashboard\\registerDashboard.service.ts","C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\.stryker-tmp\\sandbox1330625\\src\\shared\\main.identifiers.ts"],"jestConfig":{"preset":"ts-jest","coverageProvider":"v8","moduleDirectories":["node_modules","src"],"collectCoverageFrom":["!main.ts"],"testEnvironment":"C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\node_modules\\@stryker-mutator\\jest-runner\\dist\\src\\jest-plugins\\jest-environment-generic.cjs","transform":{"^.+\\.ts?$":"ts-jest"},"setupFilesAfterEnv":["./setup-tests.ts"],"rootDir":"C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\.stryker-tmp\\sandbox1330625","collectCoverage":false,"verbose":false,"notify":false,"bail":false,"reporters":[],"globals":{"__strykerGlobalNamespace__":"__stryker__"}},"testLocationInResults":true}
 08:21:22 (16132) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
 08:21:22 (16132) DEBUG PluginLoader Loading plugin file:///C:/custom/media/obsidian/.obsidian/plugins/obsidian-dashboard/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
@@ -763,7 +763,7 @@ Require stack:
   "bail": false,
   "reporters": []
 }
-08:21:24 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 4 with pid 18220 
+08:21:24 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 4 with pid 18220
 08:21:24 (16132) DEBUG CustomJestConfigLoader Read config from "jest.config.ts" (used native `readInitialOptions` from jest-config).
 08:21:24 (16132) DEBUG JestTestRunner Merging file-based config {
   "preset": "ts-jest",
@@ -792,7 +792,7 @@ Require stack:
   "bail": false,
   "reporters": []
 }
-08:21:24 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 5 with pid 18280 
+08:21:24 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 5 with pid 18280
 08:21:25 (18220) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
 08:21:25 (18220) DEBUG PluginLoader Loading plugin file:///C:/custom/media/obsidian/.obsidian/plugins/obsidian-dashboard/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
 08:21:25 (18280) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
@@ -831,7 +831,7 @@ Require stack:
   "bail": false,
   "reporters": []
 }
-08:21:27 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 6 with pid 8412 
+08:21:27 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 6 with pid 8412
 08:21:28 (18280) DEBUG CustomJestConfigLoader Read config from "jest.config.ts" (used native `readInitialOptions` from jest-config).
 08:21:28 (18280) DEBUG JestTestRunner Merging file-based config {
   "preset": "ts-jest",
@@ -860,7 +860,7 @@ Require stack:
   "bail": false,
   "reporters": []
 }
-08:21:28 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 7 with pid 1272 
+08:21:28 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 7 with pid 1272
 08:21:28 (8412) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
 08:21:28 (8412) DEBUG PluginLoader Loading plugin file:///C:/custom/media/obsidian/.obsidian/plugins/obsidian-dashboard/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
 08:21:28 (1272) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
@@ -908,7 +908,7 @@ Require stack:
   "bail": false,
   "reporters": []
 }
-08:21:33 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 8 with pid 6340 
+08:21:33 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 8 with pid 6340
 08:21:34 (1272) DEBUG CustomJestConfigLoader Read config from "jest.config.ts" (used native `readInitialOptions` from jest-config).
 08:21:34 (1272) DEBUG JestTestRunner Merging file-based config {
   "preset": "ts-jest",
@@ -937,7 +937,7 @@ Require stack:
   "bail": false,
   "reporters": []
 }
-08:21:34 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 9 with pid 14136 
+08:21:34 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 9 with pid 14136
 08:21:35 (6340) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
 08:21:35 (6340) DEBUG PluginLoader Loading plugin file:///C:/custom/media/obsidian/.obsidian/plugins/obsidian-dashboard/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
 08:21:35 (6340) DEBUG ChildProcessProxyWorker Changing current working directory for this process to C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\.stryker-tmp\sandbox1330625
@@ -976,7 +976,7 @@ Require stack:
   "bail": false,
   "reporters": []
 }
-08:21:39 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 10 with pid 21028 
+08:21:39 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 10 with pid 21028
 08:21:39 (14136) DEBUG CustomJestConfigLoader Read config from "jest.config.ts" (used native `readInitialOptions` from jest-config).
 08:21:39 (14136) DEBUG JestTestRunner Merging file-based config {
   "preset": "ts-jest",
@@ -1041,7 +1041,7 @@ Require stack:
 08:21:41 (15800) DEBUG TimeoutDecorator Timeout expired, restarting the process and reporting timeout
 08:21:41 (15800) DEBUG ChildProcessProxy Disposing of worker process 5556
 08:21:41 (15800) DEBUG ChildProcessProxy Kill 5556
-08:21:41 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 11 with pid 9164 
+08:21:41 (15800) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 11 with pid 9164
 08:21:42 (9164) DEBUG PluginLoader Loading plugin @stryker-mutator/jest-runner
 08:21:42 (9164) DEBUG PluginLoader Loading plugin file:///C:/custom/media/obsidian/.obsidian/plugins/obsidian-dashboard/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
 08:21:42 (9164) DEBUG ChildProcessProxyWorker Changing current working directory for this process to C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\.stryker-tmp\sandbox1330625
@@ -1078,39 +1078,63 @@ Require stack:
 08:21:44 (15800) DEBUG HtmlReporter Using file "reports/mutation/mutation.html"
 08:21:44 (15800) DEBUG ClearTextReporter [Killed] BlockStatement
 08:21:44 (15800) DEBUG ClearTextReporter src/core/dashboard-bootstrap-service/dashboardBootstrap.service.ts:8:50
-08:21:44 (15800) DEBUG ClearTextReporter -   	public get bootstrapStatus$(): Observable<null> {
-08:21:44 (15800) DEBUG ClearTextReporter -   		return this.#bootstrapStatus$.asObservable();
-08:21:44 (15800) DEBUG ClearTextReporter -   	}
-08:21:44 (15800) DEBUG ClearTextReporter +   	public get bootstrapStatus$(): Observable<null> {}
+08:21:44 (15800) DEBUG ClearTextReporter -   	public get bootstrapStatus$(): Observable<null> {
+
+08:21:44 (15800) DEBUG ClearTextReporter -   		return this.#bootstrapStatus$.asObservable();
+
+08:21:44 (15800) DEBUG ClearTextReporter -   	}
+
+08:21:44 (15800) DEBUG ClearTextReporter +   	public get bootstrapStatus$(): Observable<null> {}
+
 08:21:44 (15800) DEBUG ClearTextReporter Killed by: DashboardBootstrapService it should notify and emit values through showApp$
-08:21:44 (15800) DEBUG ClearTextReporter 
+08:21:44 (15800) DEBUG ClearTextReporter
 08:21:44 (15800) DEBUG ClearTextReporter [Timeout] BlockStatement
 08:21:44 (15800) DEBUG ClearTextReporter src/core/dashboard-bootstrap-service/dashboardBootstrap.service.ts:12:27
-08:21:44 (15800) DEBUG ClearTextReporter -   	public launchDashboard() {
-08:21:44 (15800) DEBUG ClearTextReporter -   		this.#bootstrapStatus$.next(null);
-08:21:44 (15800) DEBUG ClearTextReporter -   	}
-08:21:44 (15800) DEBUG ClearTextReporter +   	public launchDashboard() {}
-08:21:44 (15800) DEBUG ClearTextReporter 
+08:21:44 (15800) DEBUG ClearTextReporter -   	public launchDashboard() {
+
+08:21:44 (15800) DEBUG ClearTextReporter -   		this.#bootstrapStatus$.next(null);
+
+08:21:44 (15800) DEBUG ClearTextReporter -   	}
+
+08:21:44 (15800) DEBUG ClearTextReporter +   	public launchDashboard() {}
+
+08:21:44 (15800) DEBUG ClearTextReporter
 08:21:44 (15800) DEBUG ClearTextReporter [Killed] BlockStatement
 08:21:44 (15800) DEBUG ClearTextReporter src/dashboard/dashboard.component.tsx:5:41
-08:21:44 (15800) DEBUG ClearTextReporter -   export const DashboardComponent = () => {
-08:21:44 (15800) DEBUG ClearTextReporter -   	const [counter, setCounter] = useState(0);
-08:21:44 (15800) DEBUG ClearTextReporter -   
-08:21:44 (15800) DEBUG ClearTextReporter -   	return (
-08:21:44 (15800) DEBUG ClearTextReporter -   		<div data-testid="app">
-08:21:44 (15800) DEBUG ClearTextReporter -   			<h1 className="tw-flex tw-bg-amber-50">{counter}</h1>
-08:21:44 (15800) DEBUG ClearTextReporter -   			<Camera size={24}/>
-08:21:44 (15800) DEBUG ClearTextReporter -   			<button onClick={() => {
-08:21:44 (15800) DEBUG ClearTextReporter -   				setCounter(prev => prev + 1);
-08:21:44 (15800) DEBUG ClearTextReporter -   			}}>
-08:21:44 (15800) DEBUG ClearTextReporter -   				lol
-08:21:44 (15800) DEBUG ClearTextReporter -   			</button>
-08:21:44 (15800) DEBUG ClearTextReporter -   		</div>
-08:21:44 (15800) DEBUG ClearTextReporter -   	);
-08:21:44 (15800) DEBUG ClearTextReporter -   };
-08:21:44 (15800) DEBUG ClearTextReporter +   export const DashboardComponent = () => {};
+08:21:44 (15800) DEBUG ClearTextReporter -   export const DashboardComponent = () => {
+
+08:21:44 (15800) DEBUG ClearTextReporter -   	const [counter, setCounter] = useState(0);
+
+08:21:44 (15800) DEBUG ClearTextReporter -
+
+08:21:44 (15800) DEBUG ClearTextReporter -   	return (
+
+08:21:44 (15800) DEBUG ClearTextReporter -   		<div data-testid="app">
+
+08:21:44 (15800) DEBUG ClearTextReporter -   			<h1 className="tw-flex tw-bg-amber-50">{counter}</h1>
+
+08:21:44 (15800) DEBUG ClearTextReporter -   			<Camera size={24}/>
+
+08:21:44 (15800) DEBUG ClearTextReporter -   			<button onClick={() => {
+
+08:21:44 (15800) DEBUG ClearTextReporter -   				setCounter(prev => prev + 1);
+
+08:21:44 (15800) DEBUG ClearTextReporter -   			}}>
+
+08:21:44 (15800) DEBUG ClearTextReporter -   				lol
+
+08:21:44 (15800) DEBUG ClearTextReporter -   			</button>
+
+08:21:44 (15800) DEBUG ClearTextReporter -   		</div>
+
+08:21:44 (15800) DEBUG ClearTextReporter -   	);
+
+08:21:44 (15800) DEBUG ClearTextReporter -   };
+
+08:21:44 (15800) DEBUG ClearTextReporter +   export const DashboardComponent = () => {};
+
 08:21:44 (15800) DEBUG ClearTextReporter Killed by: dashboardComponent it should render
-08:21:44 (15800) DEBUG ClearTextReporter 
+08:21:44 (15800) DEBUG ClearTextReporter
 08:21:44 (15800) INFO DashboardReporter The report was not send to the dashboard. The dashboard.project and/or dashboard.version values were missing and not detected to be running on a build server.
 08:21:44 (15800) DEBUG MutationTestReportHelper No breaking threshold configured. Won't fail the build no matter how low your mutation score is. Set `thresholds.break` to change this behavior.
 08:21:44 (15800) INFO HtmlReporter Your report can be found at: file:///C:/custom/media/obsidian/.obsidian/plugins/obsidian-dashboard/reports/mutation/mutation.html

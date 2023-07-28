@@ -4,34 +4,35 @@ import * as React from "react";
 import {DashboardComponent} from "./dashboard.component";
 
 export class DashboardView extends ItemView {
-    public static readonly VIEW_TYPE = "dashboard-view";
+	public static readonly VIEW_TYPE = "dashboard-view";
 
-    private readonly root = createRoot(this.containerEl.children[1]);
-    constructor(leaf: WorkspaceLeaf) {
-        super(leaf);
-    }
+	private readonly root = createRoot(this.containerEl.children[1]);
 
-    getViewType() {
-        return DashboardView.VIEW_TYPE;
-    }
+	constructor(leaf: WorkspaceLeaf) {
+		super(leaf);
+	}
 
-    getIcon(): IconName {
-        return 'pie-chart';
-    }
+	getViewType() {
+		return DashboardView.VIEW_TYPE;
+	}
 
-    getDisplayText() {
-        return "Dashboard";
-    }
+	getIcon(): IconName {
+		return 'pie-chart';
+	}
 
-    async onOpen() {
-        this.root.render(
-            <React.StrictMode>
-                <DashboardComponent />
-            </React.StrictMode>
-        );
-    }
+	getDisplayText() {
+		return "Dashboard";
+	}
 
-    async onClose() {
-        this.root.unmount()
-    }
+	async onOpen() {
+		this.root.render(
+			<React.StrictMode>
+				<DashboardComponent/>
+			</React.StrictMode>
+		);
+	}
+
+	async onClose() {
+		this.root.unmount();
+	}
 }
