@@ -1,5 +1,7 @@
 import * as React from 'react';
 import ClockComponent from "../shared/clock/clock.component";
+import ComingSoon from "../shared/widget/coming-soon/comingSoon";
+import {Settings} from "lucide-react";
 
 export const DashboardComponent = () => {
 	return (
@@ -19,7 +21,7 @@ export const DashboardComponent = () => {
 					tw-h-full
 					tw-aspect-[2/1]
 					tw-shadow-lg
-					tw-bg-obsidian-base-10
+					tw-bg-obsidian-base-20
 					tw-rounded-lg
 					tw-text-xl
 					tw-flex
@@ -28,6 +30,9 @@ export const DashboardComponent = () => {
 				">
 					<ClockComponent/>
 				</div>
+				<ComingSoon extendClassName={"tw-aspect-square"}>
+					<Settings className="tw-text-obsidian-primary" size={60}/>
+				</ComingSoon>
 			</div>
 		</main>
 	);
