@@ -98,15 +98,164 @@
   --tw-backdrop-sepia:  
 }
 
+.tw-container {
+  width: 100%
+}
+
+@media (min-width: 640px) {
+  .tw-container {
+    max-width: 640px
+  }
+}
+
+@media (min-width: 768px) {
+  .tw-container {
+    max-width: 768px
+  }
+}
+
+@media (min-width: 1024px) {
+  .tw-container {
+    max-width: 1024px
+  }
+}
+
+@media (min-width: 1280px) {
+  .tw-container {
+    max-width: 1280px
+  }
+}
+
+@media (min-width: 1536px) {
+  .tw-container {
+    max-width: 1536px
+  }
+}
+
+.tw-col-span-2 {
+  grid-column: span 2 / span 2
+}
+
+.tw-m-0 {
+  margin: 0px
+}
+
+.tw-mx-auto {
+  margin-left: auto;
+  margin-right: auto
+}
+
 .tw-flex {
   display: flex
 }
 
-.tw-bg-amber-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 251 235 / var(--tw-bg-opacity))
+.tw-grid {
+  display: grid
 }
 
-.tw-accent-amber-50 {
-  accent-color: #fffbeb
+.tw-aspect-\[2\/1\] {
+  aspect-ratio: 2/1
+}
+
+.tw-h-fit {
+  height: -moz-fit-content;
+  height: fit-content
+}
+
+.tw-h-full {
+  height: 100%
+}
+
+.tw-w-full {
+  width: 100%
+}
+
+.tw-grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
+.tw-items-center {
+  align-items: center
+}
+
+.tw-justify-center {
+  justify-content: center
+}
+
+.tw-gap-5 {
+  gap: 1.25rem
+}
+
+.tw-scroll-auto {
+  scroll-behavior: auto
+}
+
+.tw-rounded-lg {
+  border-radius: 0.5rem
+}
+
+.tw-bg-obsidian-base-10 {
+  background-color: var(--color-base-10)
+}
+
+.tw-p-5 {
+  padding: 1.25rem
+}
+
+.tw-text-5xl {
+  font-size: 3rem;
+  line-height: 1
+}
+
+.tw-text-6xl {
+  font-size: 3.75rem;
+  line-height: 1
+}
+
+.tw-text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem
+}
+
+.tw-text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem
+}
+
+.tw-font-bold {
+  font-weight: 700
+}
+
+.tw-tracking-widest {
+  letter-spacing: 0.1em
+}
+
+.tw-shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.tw-\@container {
+  container-type: inline-size
+}
+
+@container (min-width: 28rem) {
+  .\@md\:tw-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr))
+  }
+}
+
+@container (min-width: 42rem) {
+  @container (min-width: 56rem) {
+    .\@2xl\:\@4xl\:tw-grid-cols-6 {
+      grid-template-columns: repeat(6, minmax(0, 1fr))
+    }
+  }
+}
+
+@container (min-width: 72rem) {
+  .\@6xl\:tw-grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr))
+  }
 }
