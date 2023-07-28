@@ -42,6 +42,7 @@
 	},
 	"dependencies": {
 		"@codemirror/view": "^6.15.3",
+		"lucide-react": "^0.263.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"reflect-metadata": "^0.1.13",
