@@ -23,6 +23,6 @@ describe("useLiveDate hook", () => {
 		});
 
 		const updatedDate = new Date();
-		expect(result.current.getTime()).toEqual(updatedDate.getTime());
+		expect(result.current.value.getTime()).toEqual(updatedDate.getTime());
 	});
 });

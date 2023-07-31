@@ -6,7 +6,6 @@ import {useEffect} from "react";
 
 const useLiveDate = () => {
 	const dashboardUnloadService = container.resolve(DashboardUnloadService);
-
 	const liveDate = useSignal(new Date());
 
 	useEffect(() => {
@@ -15,7 +14,6 @@ const useLiveDate = () => {
 				takeUntil(dashboardUnloadService.dashboardUnload$),
 				tap(() => {
 					liveDate.value = new Date();
-					console.log('called');
 				})
 			).subscribe();
 
@@ -23,6 +21,7 @@ const useLiveDate = () => {
 			liveDateSubscription.unsubscribe();
 		};
 	}, []);
+
 	return liveDate;
 };
 

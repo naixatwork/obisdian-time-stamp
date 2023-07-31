@@ -108,7 +108,7 @@
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\setup-tests.ts",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\dashboard-bootstrap-service\\dashboardBootstrap.service.ts",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\dashboard-bootstrap-service\\dashboardBootstrap.service.spec.ts",
-  "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\ribbon-service\\ribbon.service.test.ts",
+  "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\ribbon-service\\ribbon.service.spec.ts",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\ribbon-service\\ribbon.service.ts",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\dashboard\\dashboard.component.spec.tsx",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\dashboard\\dashboard.component.tsx",
@@ -380,13 +380,13 @@
 Require stack:
   main.js
   src/core/ribbon-service/ribbon.service.ts
-  src/core/ribbon-service/ribbon.service.test.ts
+  src/core/ribbon-service/ribbon.service.spec.ts
  Error: Cannot find module 'obsidian' from 'main.js'
 
 Require stack:
   main.js
   src/core/ribbon-service/ribbon.service.ts
-  src/core/ribbon-service/ribbon.service.test.ts
+  src/core/ribbon-service/ribbon.service.spec.ts
 
     at Resolver._throwModNotFoundError (C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\node_modules\jest-resolve\build\resolver.js:427:11)
     at Resolver.resolveModule (C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\node_modules\jest-resolve\build\resolver.js:358:10)
@@ -405,7 +405,7 @@ Require stack:
     at Runtime._loadModule (C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\node_modules\jest-runtime\build\index.js:1013:12)
     at Runtime.requireModule (C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\node_modules\jest-runtime\build\index.js:873:12)
     at Runtime.requireModuleOrMock (C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\node_modules\jest-runtime\build\index.js:1039:21)
-    at Object.<anonymous> (C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\.stryker-tmp\sandbox3842089\src\core\ribbon-service\ribbon.service.test.ts:2:1)
+    at Object.<anonymous> (C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\.stryker-tmp\sandbox3842089\src\core\ribbon-service\ribbon.service.spec.ts:2:1)
     at Runtime._execModule (C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\node_modules\jest-runtime\build\index.js:1430:24)
     at Runtime._loadModule (C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\node_modules\jest-runtime\build\index.js:1013:12)
     at Runtime.requireModule (C:\custom\media\obsidian\.obsidian\plugins\obsidian-dashboard\node_modules\jest-runtime\build\index.js:873:12)
@@ -605,7 +605,7 @@ Require stack:
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\setup-tests.ts",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\dashboard-bootstrap-service\\dashboardBootstrap.service.ts",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\dashboard-bootstrap-service\\dashboardBootstrap.service.spec.ts",
-  "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\ribbon-service\\ribbon.service.test.ts",
+  "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\ribbon-service\\ribbon.service.spec.ts",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\core\\ribbon-service\\ribbon.service.ts",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\dashboard\\dashboard.component.spec.tsx",
   "C:\\custom\\media\\obsidian\\.obsidian\\plugins\\obsidian-dashboard\\src\\dashboard\\dashboard.component.tsx",
