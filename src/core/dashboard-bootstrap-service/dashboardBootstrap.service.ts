@@ -10,6 +10,7 @@ export default class DashboardBootstrapService {
 	}
 
 	public launchDashboard() {
+		console.log('Dashboard Bootstrapped');
 		this.#bootstrapStatus$.next(null);
 	}
 }

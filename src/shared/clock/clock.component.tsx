@@ -11,7 +11,7 @@ const ClockComponent = () => {
 			tw-items-center
 			tw-justify-center
 			tw-p-5">
-			<h1 className="tw-m-0 tw-font-bold tw-tracking-widest tw-h-fit">{dateToClock(liveDate)}</h1>
+			<h1 className="tw-m-0 tw-font-bold tw-tracking-widest tw-h-fit">{dateToClock(liveDate.value)}</h1>
 		</div>
 	);
 };
