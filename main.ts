@@ -9,10 +9,6 @@ import GraphPluginService from "./src/core/graph-plugin-service/graphPlugin.serv
 
 export default class MainPlugin extends Plugin {
 	async onload() {
-		setTimeout(() => {
-			console.log(this.app.vault.getMarkdownFiles());
-		});
-
 		container.register(MAIN_IDENTIFIERS.mainPlugin, {useValue: this});
 		container.resolve(RibbonService);
 		container.resolve(RegisterDashboardService);
