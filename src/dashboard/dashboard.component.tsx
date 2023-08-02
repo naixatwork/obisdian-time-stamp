@@ -2,6 +2,7 @@ import * as React from 'react';
 import ClockComponent from "../shared/clock/clock.component";
 import ComingSoon from "../shared/widget/coming-soon/comingSoon";
 import {Settings} from "lucide-react";
+import GroupPie from "../shared/group-pie/groupPie";
 
 export const DashboardComponent = () => {
 	return (
@@ -16,6 +17,15 @@ export const DashboardComponent = () => {
 					tw-grid-cols-2 @md:tw-grid-cols-4 @2xl:@4xl:tw-grid-cols-6 @6xl:tw-grid-cols-8
 					tw-gap-5
 			">
+				<div className="
+					tw-col-span-2 tw-row-span-2
+					tw-aspect-square
+					tw-shadow-lg
+					tw-bg-obsidian-base-20
+					tw-rounded-lg
+				">
+					<GroupPie/>
+				</div>
 				<div className="
 					tw-col-span-2
 					tw-h-full
